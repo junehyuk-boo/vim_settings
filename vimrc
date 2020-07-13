@@ -25,13 +25,11 @@ set nocompatible
 set mouse=a
 
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'majutsushi/tagbar'
-
-call vundle#end()
+""set rtp+=~/.vim/bundle/Vundle.vim
+""call vundle#begin()
+""Plugin 'VundleVim/Vundle.vim'
+""Plugin 'majutsushi/tagbar'
+""call vundle#end()
 filetype plugin indent on
 autocmd FileType python set tabstop=4
 

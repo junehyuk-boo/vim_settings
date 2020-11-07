@@ -33,9 +33,13 @@ filetype off
 ""Plugin 'majutsushi/tagbar'
 ""Plugin 'scrooloose/nerdtree'
 ""Plugin 'vim-airline/vim-airline'
+""Plugin 'vim-airline/vim-airline-themes'
 ""call vundle#end()
 filetype plugin indent on
 autocmd FileType python set tabstop=4
+
+""let g:airline_theme='deus'
+""let g:airline_powerline_fonts=1
 
 map <F8> :TagbarToggle<CR>
 

@@ -22,6 +22,8 @@ set linebreak
 set nomodeline
 set nocompatible
 
+set laststatus=2
+
 set mouse=a
 
 filetype off
@@ -29,6 +31,8 @@ filetype off
 ""call vundle#begin()
 ""Plugin 'VundleVim/Vundle.vim'
 ""Plugin 'majutsushi/tagbar'
+""Plugin 'scrooloose/nerdtree'
+""Plugin 'vim-airline/vim-airline'
 ""call vundle#end()
 filetype plugin indent on
 autocmd FileType python set tabstop=4

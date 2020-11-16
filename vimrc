@@ -42,6 +42,7 @@ autocmd FileType python set tabstop=4
 ""let g:airline_powerline_fonts=1
 
 map <F8> :TagbarToggle<CR>
+map <F9> :NERDTreeToggle<CR>
 
 vmap <C-c> "+y
 nmap <C-v> "+p

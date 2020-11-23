@@ -19,6 +19,10 @@ set showmatch
 set title
 set linebreak
 
+set wildmenu
+hi StatusLine ctermfg=232 ctermbg=12
+hi WildMenu cterm=bold,reverse ctermfg=232 ctermbg=118
+
 set nomodeline
 set nocompatible
 

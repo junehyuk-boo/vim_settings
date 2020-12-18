@@ -54,3 +54,17 @@ nmap <C-v> "+p
 inoremap {<CR> {<CR>}<Esc>ko
 
 set tags=./tags;,tags;
+
+
+
+""" Latex settings
+function! Texbuild()
+	:! cd $(dirname %) && pdflatex $(basename %) > /dev/null
+endfunction
+
+function! Texshow()
+	:! cd $(dirname %) && xdg-open "`echo $(basename %) | cut -d'.' -f 1`.pdf"
+endfunction
+
+au FileType tex nmap <F5> :call Texbuild()<CR><CR> :call Texshow()<CR><CR>
+au FileType tex nmap <F6> :call Texbuild()<CR><CR>
